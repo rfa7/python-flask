@@ -1,0 +1,10 @@
+<form action="/echo" method="POST">
+<input name="text">
+<input type="submit" value="Echo">
+<input type="button" onclick="location.href='/';" value="Home">
+<a href="/">HOME</a>
+</form>
+
+{% if text %}
+You said: {{ text }}
+{% endif %}
